@@ -29,15 +29,16 @@ const COLUMNS = [
     links: [
       { label: "About", href: "#about" },
       { label: "Support / FAQ", href: "#support" },
-      { label: "Contact", href: "#contact" },
+      { label: "Contact", href: "/contact" },
     ],
   },
   {
     title: "Legal",
     links: [
-      { label: "Privacy Policy", href: "#" },
-      { label: "Terms of Service", href: "#" },
-      { label: "Refund Policy", href: "#" },
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Terms & Conditions", href: "/terms" },
+      { label: "Cancellation & Refunds", href: "/refunds" },
+      { label: "Shipping Policy", href: "/shipping" },
     ],
   },
 ];
@@ -63,7 +64,7 @@ export default function Footer() {
                 className="flex items-center gap-3 hover:text-white transition-colors"
               >
                 <Mail size={16} className="text-[#8bc34a]" />
-                support@conceptaffairs.in
+                humblyprep@gmail.com
               </a>
               <div className="flex items-center gap-3">
                 <MapPin size={16} className="text-[#8bc34a]" />
