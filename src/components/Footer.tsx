@@ -39,6 +39,7 @@ const COLUMNS = [
       { label: "Terms & Conditions", href: "/terms" },
       { label: "Cancellation & Refunds", href: "/refunds" },
       { label: "Shipping Policy", href: "/shipping" },
+      { label: "Delete Account", href: "/delete-account" },
     ],
   },
 ];
