@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ConceptAffairs — UPSC Prep App | Daily News to Exam-Ready Knowledge",
   description:
-    "ConceptAffairs turns daily current affairs into syllabus-mapped UPSC knowledge — verified by quizzes, reinforced by AI-powered spaced revision. Available on Android & iOS.",
+    "ConceptAffairs turns daily current affairs into syllabus-mapped UPSC knowledge — verified by quizzes, reinforced by spaced revision. Available on Android & iOS.",
   keywords: [
     "UPSC app",
     "UPSC preparation",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ConceptAffairs — UPSC Prep App",
     description:
-      "Turn daily news into exam-ready UPSC knowledge. Daily current affairs, syllabus mapping, quizzes & AI revision — in one app.",
+      "Turn daily news into exam-ready UPSC knowledge. Daily current affairs, syllabus mapping, quizzes & revision — in one app.",
     type: "website",
   },
 };

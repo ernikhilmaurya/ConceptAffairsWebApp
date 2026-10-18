@@ -3,53 +3,56 @@ import LegalLayout from "@/components/LegalLayout";
 
 export const metadata: Metadata = {
   title: "Cancellation and Refunds — ConceptAffairs",
-  description: "Cancellation and refund policy for ConceptAffairs subscriptions.",
+  description: "Cancellation and refund policy for ConceptAffairs plans.",
 };
 
 export default function RefundsPage() {
   return (
-    <LegalLayout title="Cancellation and Refunds" updated="10 August 2026">
-      <h2>Cancellation</h2>
+    <LegalLayout title="Cancellation and Refunds" updated="18 October 2026">
+      <h2>No Auto-Renewal, Nothing to Cancel</h2>
       <p>
-        You can cancel your ConceptAffairs subscription (Pro Monthly or Pro Yearly) at any time
-        from within the app. Cancellation stops future renewals — it does not end your current
-        billing period early.
+        ConceptAffairs plans are one-time prepaid terms of 1, 3, 6, or 12 months. They do not
+        auto-renew, so you are never charged again unless you choose to buy another plan.
+        There is no subscription to cancel.
       </p>
       <p>
-        When you cancel, you retain full access to your paid plan&apos;s features until the end
-        of the billing period you&apos;ve already paid for. After that, your account
-        automatically moves to the Free plan.
+        Your access runs until the end of the term you paid for and then simply stops. Your
+        progress, streaks, and syllabus health stay saved, and you can buy another plan at any
+        time to continue.
+      </p>
+
+      <h2>Free Trial</h2>
+      <p>
+        New users get a one-time 7-day free trial with full access. No payment is taken for the
+        trial, and it does not convert into a paid plan automatically.
       </p>
 
       <h2>Refunds</h2>
       <p>
-        ConceptAffairs subscriptions are <strong>non-refundable</strong>. Because the Service is
-        a digital product delivered instantly and consumed on access, we do not offer refunds
-        or credits for:
+        Plans are <strong>non-refundable</strong>. Because the Service is a digital product
+        delivered instantly and consumed on access, we do not offer refunds or credits for:
       </p>
       <ul>
-        <li>Partial subscription periods after cancellation.</li>
+        <li>Unused days remaining in a plan.</li>
         <li>Unused features within a plan.</li>
         <li>Change of mind after a successful payment.</li>
-        <li>Automatic renewal charges, unless required by law.</li>
       </ul>
 
       <h2>Exceptions</h2>
       <p>
-        We will review refund requests on a case-by-case basis for genuine issues such as a
-        duplicate charge, an unauthorised transaction, or a payment that was successfully
-        debited but did not activate your subscription. To request a review, email{" "}
-        <a href="mailto:humblyprep@gmail.com">humblyprep@gmail.com</a> within 7 days
-        of the charge, including your registered email and payment reference ID.
+        We review refund requests case by case for genuine issues such as a duplicate charge, an
+        unauthorised transaction, or a payment that was successfully debited but did not
+        activate your plan. To request a review, email{" "}
+        <a href="mailto:humblyprep@gmail.com">humblyprep@gmail.com</a> within 7 days of the
+        charge, including your registered mobile number and the Google Play order ID (it starts with
+        &quot;GPA.&quot; and is in your Google Play receipt email).
+        Approved refunds are returned to the original payment method.
       </p>
-
-      <h2>How to Cancel</h2>
-      <p>Open the ConceptAffairs app → Profile → Subscription → Cancel Subscription.</p>
 
       <h2>Contact</h2>
       <p>
-        For billing or cancellation help, see our <a href="/contact">Contact Us</a> page or
-        email <a href="mailto:humblyprep@gmail.com">humblyprep@gmail.com</a>.
+        For billing help, see our <a href="/contact">Contact Us</a> page or email{" "}
+        <a href="mailto:humblyprep@gmail.com">humblyprep@gmail.com</a>.
       </p>
     </LegalLayout>
   );

@@ -54,7 +54,7 @@ export default function Hero() {
           </div>
 
           <p className="mt-4 text-xs text-white/40">
-            Available exclusively as a mobile app · Free to start · No credit card required
+            Available exclusively as a mobile app · 7-day free trial · No card needed to start
           </p>
         </motion.div>
 

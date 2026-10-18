@@ -6,7 +6,7 @@ const STATS = [
   { value: "9", label: "GS subjects covered" },
   { value: "Daily", label: "fresh analysed articles" },
   { value: "4", label: "core app pillars" },
-  { value: "AI", label: "powered spaced revision" },
+  { value: "Spaced", label: "revision on weak concepts" },
 ];
 
 export default function About() {

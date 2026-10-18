@@ -3,50 +3,23 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
+// Mirrors the subscription_plans seed in backend/src/migrations.js. Plans are
+// one-time prepaid terms — nothing auto-renews — so never describe them as
+// "billed monthly" or "cancel anytime".
 const PLANS = [
-  {
-    name: "Free",
-    price: "₹0",
-    period: "forever",
-    tagline: "Try the daily loop, no card needed.",
-    features: [
-      "Today's UPSC-analysed news feed",
-      "Basic Prelims quizzes",
-      "Syllabus browser (read-only)",
-      "Daily streak tracking",
-    ],
-    cta: "Start Free",
-    highlight: false,
-  },
-  {
-    name: "Pro Monthly",
-    price: "₹299",
-    period: "/ month",
-    tagline: "Full loop, billed monthly.",
-    features: [
-      "Everything in Free",
-      "Full quiz suite (easy/medium/hard)",
-      "Progress analytics & Readiness Score",
-      "AI Blind-Spot Coach",
-      "AI-powered spaced revision",
-    ],
-    cta: "Go Pro",
-    highlight: true,
-  },
-  {
-    name: "Pro Yearly",
-    price: "₹1,999",
-    period: "/ year",
-    tagline: "Best value for a full attempt cycle.",
-    features: [
-      "Everything in Pro Monthly",
-      "~45% cheaper than monthly",
-      "Priority AI revision generation",
-      "Early access to new features",
-    ],
-    cta: "Go Yearly",
-    highlight: false,
-  },
+  { name: "1 Month", price: "₹299", perMonth: "₹299 / month", tagline: "Billed once", highlight: false },
+  { name: "3 Months", price: "₹799", perMonth: "≈ ₹266 / month", tagline: "Save vs monthly", highlight: false },
+  { name: "6 Months", price: "₹1,499", perMonth: "≈ ₹250 / month", tagline: "Best value", highlight: true },
+  { name: "12 Months", price: "₹2,999", perMonth: "≈ ₹250 / month", tagline: "Lowest per-month cost", highlight: false },
+];
+
+const INCLUDED = [
+  "Daily UPSC-analysed news feed",
+  "Golden Syllabus mapping & Topic Health",
+  "Prelims MCQs (easy/medium/hard) & Mains practice",
+  "RevCoach spaced revision on weak concepts",
+  "Progress analytics & Readiness Score",
+  "Keyword glossary & study reminders",
 ];
 
 export default function Pricing() {
@@ -60,15 +33,16 @@ export default function Pricing() {
           <h2 className="mt-3 text-4xl md:text-5xl font-black tracking-tight">
             Simple pricing.
             <br />
-            <span className="text-gradient">Cancel anytime, in-app.</span>
+            <span className="text-gradient">No auto-renewal.</span>
           </h2>
           <p className="mt-4 text-white/50 text-sm">
-            Indicative pricing shown below — final plans, offers & regional pricing are set inside
-            the app at checkout.
+            Start with a one-time 7-day free trial. Then pick a prepaid plan — you pay once, and
+            you&apos;re never charged again unless you buy another plan. Prices shown are
+            indicative; the final price is shown in the app at checkout.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {PLANS.map((plan, i) => (
             <motion.div
               key={plan.name}
@@ -84,24 +58,13 @@ export default function Pricing() {
             >
               {plan.highlight && (
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[#fdb913] px-4 py-1 text-xs font-bold text-black">
-                  Most Popular
+                  Best Value
                 </span>
               )}
               <h3 className="text-lg font-bold text-white/80">{plan.name}</h3>
-              <div className="mt-3 flex items-end gap-1">
-                <span className="text-4xl font-black">{plan.price}</span>
-                <span className="text-white/40 text-sm mb-1">{plan.period}</span>
-              </div>
-              <p className="mt-2 text-sm text-white/50">{plan.tagline}</p>
-
-              <ul className="mt-7 space-y-3 flex-1">
-                {plan.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5 text-sm text-white/70">
-                    <Check size={16} className="text-[#8bc34a] mt-0.5 shrink-0" />
-                    {f}
-                  </li>
-                ))}
-              </ul>
+              <div className="mt-3 text-4xl font-black">{plan.price}</div>
+              <p className="mt-1 text-sm text-white/40">{plan.perMonth}</p>
+              <p className="mt-4 text-sm text-white/60 flex-1">{plan.tagline}</p>
 
               <a
                 href="#download"
@@ -111,10 +74,22 @@ export default function Pricing() {
                     : "glass text-white hover:bg-white/10"
                 }`}
               >
-                {plan.cta}
+                Get the app
               </a>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-12 max-w-3xl mx-auto glass rounded-3xl p-8">
+          <h3 className="text-lg font-bold text-white/80">Every plan and the free trial include</h3>
+          <ul className="mt-5 grid sm:grid-cols-2 gap-3">
+            {INCLUDED.map((f) => (
+              <li key={f} className="flex items-start gap-2.5 text-sm text-white/70">
+                <Check size={16} className="text-[#8bc34a] mt-0.5 shrink-0" />
+                {f}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

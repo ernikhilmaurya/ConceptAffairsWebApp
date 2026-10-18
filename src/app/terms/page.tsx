@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <LegalLayout title="Terms & Conditions" updated="10 August 2026">
+    <LegalLayout title="Terms & Conditions" updated="18 October 2026">
       <p>
         These Terms & Conditions (&quot;Terms&quot;) govern your access to and use of the
         ConceptAffairs mobile application and website (together, the &quot;Service&quot;),
@@ -18,37 +18,45 @@ export default function TermsPage() {
 
       <h2>1. The Service</h2>
       <p>
-        ConceptAffairs is a digital subscription service that provides UPSC exam-preparation
-        content, including daily current affairs, syllabus mapping, quizzes, and AI-powered
-        revision tools. The Service is provided entirely digitally through our mobile apps
-        (Android & iOS) and website.
+        ConceptAffairs provides UPSC exam-preparation content, including daily current affairs,
+        syllabus mapping, quizzes, and revision tools. The Service is delivered entirely
+        digitally through our mobile app and website.
       </p>
 
       <h2>2. Accounts</h2>
       <p>
-        You must provide accurate information when creating an account and are responsible for
-        maintaining the confidentiality of your login credentials and for all activity under
-        your account.
+        You create an account with your mobile number, verified by a one-time password (OTP).
+        You are responsible for keeping access to that number secure and for all activity under
+        your account. Signing in on a new device signs you out of the previous one.
       </p>
 
-      <h2>3. Subscriptions & Payment</h2>
+      <h2>3. Plans & Payment</h2>
       <p>
-        Paid plans (Pro Monthly, Pro Yearly) are billed in advance on a recurring basis until
-        cancelled. Prices are as shown in-app at checkout and may vary by region or promotional
-        offer. Payments are processed by our third-party payment provider (Razorpay); we do not
-        store your card or payment credentials.
+        New users get a one-time 7-day free trial. Paid access is sold as fixed prepaid terms —
+        1 month, 3 months, 6 months, or 12 months — paid in full at the time of purchase.
+      </p>
+      <p>
+        These plans do not auto-renew. Nothing is charged to you again unless you choose to buy
+        another term, so there is no recurring billing to cancel. Prices are shown in the app at
+        checkout and may change for future purchases; a change never affects a term you have
+        already paid for.
+      </p>
+      <p>
+        Payments are processed by Google Play under Google&apos;s terms. We never receive or
+        store your card, UPI, or banking credentials.
       </p>
 
-      <h2>4. Cancellation & Refunds</h2>
+      <h2>4. Access, Cancellation & Refunds</h2>
       <p>
-        You may cancel your subscription at any time from within the app. See our{" "}
-        <a href="/refunds">Cancellation and Refunds</a> page for full details.
+        Your access runs until the end of the term you purchased and then simply stops. Because
+        plans do not auto-renew, no cancellation step is required. Refund eligibility is set out
+        on our <a href="/refunds">Cancellation and Refunds</a> page.
       </p>
 
       <h2>5. Acceptable Use</h2>
       <p>
         You agree not to misuse the Service, including by attempting to access it using a method
-        other than the interface we provide, scraping or reselling content, or interfering with
+        other than the interface we provide, scraping or reselling content, sharing your account with others, or interfering with
         the Service&apos;s normal operation.
       </p>
 
@@ -64,6 +72,12 @@ export default function TermsPage() {
         Content is provided for exam-preparation purposes on an &quot;as is&quot; basis. While we
         take care to keep information accurate and current, ConceptAffairs does not guarantee
         exam results and is not liable for decisions made based on the Service&apos;s content.
+      </p>
+      <p>
+        ConceptAffairs is an independent educational service. It is not affiliated with,
+        endorsed by, or connected to the Union Public Service Commission (UPSC) or any
+        government entity. Current affairs content is compiled and analysed from publicly
+        available sources.
       </p>
 
       <h2>8. Limitation of Liability</h2>

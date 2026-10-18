@@ -24,7 +24,7 @@ const PILLARS = [
   },
   {
     icon: BrainCircuit,
-    tag: "AI Coach",
+    tag: "RevCoach",
     title: "Reinforce",
     desc: "Blind spots surfaced. Spaced revision brings it all back.",
   },

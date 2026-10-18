@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 // form. Keep the retention details in sync with /privacy.
 export default function DeleteAccountPage() {
   return (
-    <LegalLayout title="Delete Your Account" updated="14 October 2026">
+    <LegalLayout title="Delete Your Account" updated="18 October 2026">
       <p>
         This page explains how to delete your account in the <strong>ConceptAffairs</strong>{" "}
         app (developer: ConceptAffairs) and what happens to your data.
@@ -45,7 +45,7 @@ export default function DeleteAccountPage() {
 
       <h2>Data that is retained</h2>
       <p>
-        Payment transaction records (plan, amount, date, and Razorpay transaction reference) are
+        Payment transaction records (plan, amount, date, and Google Play order reference) are
         kept for up to 8 years where required for tax and accounting obligations under Indian
         law, and then deleted. They are not used for any other purpose.
       </p>

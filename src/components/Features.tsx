@@ -35,13 +35,13 @@ const FEATURES = [
   },
   {
     icon: BrainCircuit,
-    title: "AI Blind-Spot Detection",
+    title: "Blind-Spot Detection",
     desc: "The app quietly watches your wrong answers and flags concepts you keep getting wrong — before they cost you marks in the real exam.",
   },
   {
     icon: BookMarked,
-    title: "AI-Powered Spaced Revision",
-    desc: "Claude-generated fact-grids and fresh MCQs bring back exactly the concepts you're forgetting, scheduled at the scientifically right moment.",
+    title: "Spaced Revision with RevCoach",
+    desc: "Fact-grids and fresh MCQs bring back exactly the concepts you're forgetting, scheduled at the scientifically right moment.",
   },
   {
     icon: Flame,

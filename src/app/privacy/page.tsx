@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 // match it — every claim here has to describe what the app actually does.
 export default function PrivacyPage() {
   return (
-    <LegalLayout title="Privacy Policy" updated="14 October 2026">
+    <LegalLayout title="Privacy Policy" updated="18 October 2026">
       <p>
         This Privacy Policy explains how ConceptAffairs (&quot;we&quot;, &quot;us&quot;,
         &quot;our&quot;), based in Noida, India, collects, uses, shares, and protects
@@ -38,8 +38,8 @@ export default function PrivacyPage() {
         </li>
         <li>
           <strong>Payment data</strong> — which plan you bought, the amount, and whether the
-          transaction succeeded. Card, UPI, and banking details are entered directly with our
-          payment provider, Razorpay, and never reach our servers.
+          transaction succeeded. Card, UPI, and banking details are entered directly with
+          Google Play and never reach our servers.
         </li>
         <li>
           <strong>Notification token</strong> — a push token issued by Firebase Cloud Messaging,
@@ -81,10 +81,10 @@ export default function PrivacyPage() {
           SMS.
         </li>
         <li>
-          <strong>Razorpay</strong> — processes payments. Its handling of your payment details
-          is governed by{" "}
-          <a href="https://razorpay.com/privacy/" target="_blank" rel="noopener noreferrer">
-            Razorpay&apos;s Privacy Policy
+          <strong>Google Play</strong> — processes payments. Its handling of your payment
+          details is governed by{" "}
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+            Google&apos;s Privacy Policy
           </a>
           .
         </li>
@@ -111,7 +111,7 @@ export default function PrivacyPage() {
         We retain your account and study data for as long as your account is active. When your
         account is deleted, we delete your profile, exam profile, study activity, and
         notification tokens. We retain payment transaction records (plan, amount, date, and
-        Razorpay transaction reference) for up to 8 years where required for tax and accounting
+        Google Play order reference) for up to 8 years where required for tax and accounting
         obligations under Indian law, after which they are deleted.
       </p>
 
