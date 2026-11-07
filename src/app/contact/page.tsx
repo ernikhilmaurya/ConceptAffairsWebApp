@@ -3,6 +3,7 @@ import { Mail, MapPin } from "lucide-react";
 import LegalLayout from "@/components/LegalLayout";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/contact" },
   title: "Contact Us — ConceptAffairs",
   description: "Get in touch with the ConceptAffairs team.",
 };

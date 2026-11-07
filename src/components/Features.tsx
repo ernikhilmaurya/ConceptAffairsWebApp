@@ -68,6 +68,10 @@ export default function Features() {
             <br />
             <span className="text-gradient">finally in one loop.</span>
           </h2>
+          <p className="mt-5 text-white/60 leading-relaxed">
+            Daily current affairs analysis, a current affairs quiz for every article, GS syllabus
+            tracking and spaced revision — the full UPSC Prelims and Mains workflow in one app.
+          </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">

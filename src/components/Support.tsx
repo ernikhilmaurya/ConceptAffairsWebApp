@@ -3,35 +3,7 @@
 import { useState, FormEvent } from "react";
 import { motion } from "framer-motion";
 import { HelpCircle, Send, CheckCircle2 } from "lucide-react";
-
-const SUPPORT_EMAIL = "humblyprep@gmail.com";
-
-const FAQS = [
-  {
-    q: "Which platforms is ConceptAffairs available on?",
-    a: "ConceptAffairs is a mobile-only app, available for Android and iOS. There is no desktop app — this website exists only to help you find and install it.",
-  },
-  {
-    q: "Is there a free trial?",
-    a: "Yes. New users get a one-time 7-day free trial with full access. After that, you need a prepaid plan (1, 3, 6, or 12 months) to keep using the daily feed and quizzes. Your progress stays saved either way.",
-  },
-  {
-    q: "How is content updated?",
-    a: "The Feed refreshes with newly analysed articles every day, so there's always something fresh mapped to the syllabus.",
-  },
-  {
-    q: "Will I be charged again automatically?",
-    a: "No. Plans are paid once, in the app, through Google Play, and do not auto-renew. Your access simply ends when your plan does, so there is nothing to cancel. See our Cancellation & Refunds policy for refunds.",
-  },
-  {
-    q: "Is ConceptAffairs an official UPSC app?",
-    a: "No. ConceptAffairs is an independent educational app and is not affiliated with, endorsed by, or connected to the Union Public Service Commission (UPSC) or any government entity.",
-  },
-  {
-    q: "I found a bug or have feedback — where do I report it?",
-    a: "Use the query form or email humblyprep@gmail.com — we read every message.",
-  },
-];
+import { FAQS, SUPPORT_EMAIL } from "@/lib/site";
 
 export default function Support() {
   const [submitted, setSubmitted] = useState(false);

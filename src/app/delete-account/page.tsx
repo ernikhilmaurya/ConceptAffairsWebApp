@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import LegalLayout from "@/components/LegalLayout";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/delete-account" },
   title: "Delete Your Account — ConceptAffairs",
   description: "How to request deletion of your ConceptAffairs account and data.",
 };

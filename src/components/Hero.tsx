@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { Apple, PlayCircle, Star } from "lucide-react";
+import { APP_STORE_URL, PLAY_STORE_URL } from "@/lib/site";
 
 const Hero3D = dynamic(() => import("./Hero3D"), { ssr: false });
 
@@ -25,27 +26,30 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-6xl font-black leading-[1.05] tracking-tight">
+            <span className="block mb-4 text-base md:text-lg font-semibold tracking-normal text-white/70">
+              ConceptAffairs — the UPSC Current Affairs App
+            </span>
             Turn today&apos;s news into
             <br />
             <span className="text-gradient">tomorrow&apos;s exam answers.</span>
           </h1>
 
           <p className="mt-6 text-lg text-white/60 max-w-lg">
-            ConceptAffairs reads the news for you, maps it to the UPSC syllabus, tests you with
-            auto-generated quizzes, and brings back exactly what you&apos;re forgetting —
-            before the exam does.
+            ConceptAffairs reads the daily news for you, maps every story to the UPSC GS
+            syllabus, tests you with Prelims MCQs and Mains questions, and brings back exactly
+            what you&apos;re forgetting — before the exam does.
           </p>
 
           <div className="mt-9 flex flex-col sm:flex-row gap-4">
             <a
-              href="#download"
+              href={PLAY_STORE_URL || "#download"}
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#fdb913] px-7 py-4 font-semibold text-black glow-orange hover:bg-[#ffc93d] transition-all"
             >
               <PlayCircle size={20} />
               Download for Android
             </a>
             <a
-              href="#download"
+              href={APP_STORE_URL || "#download"}
               className="inline-flex items-center justify-center gap-2 rounded-full glass px-7 py-4 font-semibold text-white hover:bg-white/10 transition-all"
             >
               <Apple size={20} />

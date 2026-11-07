@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import LegalLayout from "@/components/LegalLayout";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/shipping" },
   title: "Shipping Policy — ConceptAffairs",
   description: "ConceptAffairs is a digital subscription — no physical goods are shipped.",
 };

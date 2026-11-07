@@ -2,16 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
-
-// Mirrors the subscription_plans seed in backend/src/migrations.js. Plans are
-// one-time prepaid terms — nothing auto-renews — so never describe them as
-// "billed monthly" or "cancel anytime".
-const PLANS = [
-  { name: "1 Month", price: "₹299", perMonth: "₹299 / month", tagline: "Billed once", highlight: false },
-  { name: "3 Months", price: "₹799", perMonth: "≈ ₹266 / month", tagline: "Save vs monthly", highlight: false },
-  { name: "6 Months", price: "₹1,499", perMonth: "≈ ₹250 / month", tagline: "Best value", highlight: true },
-  { name: "12 Months", price: "₹2,999", perMonth: "≈ ₹250 / month", tagline: "Lowest per-month cost", highlight: false },
-];
+import { PLANS } from "@/lib/site";
 
 const INCLUDED = [
   "Daily UPSC-analysed news feed",

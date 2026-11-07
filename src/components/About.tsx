@@ -26,6 +26,10 @@ export default function About() {
             Why we built this.
           </h2>
           <p className="mt-6 text-white/60 leading-relaxed">
+            ConceptAffairs (Concept Affairs) is an IAS and civil services preparation app built
+            around one thing: daily current affairs for UPSC, done properly.
+          </p>
+          <p className="mt-4 text-white/60 leading-relaxed">
             UPSC preparation has always meant juggling newspapers, coaching notes, static
             revision material, and quiz PDFs — none of them talking to each other. Aspirants
             spend more time organizing prep than actually learning.

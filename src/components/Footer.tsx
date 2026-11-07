@@ -6,12 +6,13 @@ import {
   YoutubeGlyph,
   LinkedinGlyph,
 } from "./SocialGlyphs";
+import { SOCIALS as SOCIAL_URLS } from "@/lib/site";
 
 const SOCIALS = [
-  { icon: InstagramGlyph, href: "#", label: "Instagram" },
-  { icon: XGlyph, href: "#", label: "X / Twitter" },
-  { icon: YoutubeGlyph, href: "#", label: "YouTube" },
-  { icon: LinkedinGlyph, href: "#", label: "LinkedIn" },
+  { icon: InstagramGlyph, href: SOCIAL_URLS.instagram || "#", label: "Instagram" },
+  { icon: XGlyph, href: SOCIAL_URLS.x || "#", label: "X / Twitter" },
+  { icon: YoutubeGlyph, href: SOCIAL_URLS.youtube || "#", label: "YouTube" },
+  { icon: LinkedinGlyph, href: SOCIAL_URLS.linkedin || "#", label: "LinkedIn" },
 ];
 
 const COLUMNS = [
