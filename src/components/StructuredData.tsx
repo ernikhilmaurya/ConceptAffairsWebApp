@@ -46,7 +46,7 @@ const graph = {
       description: SITE_DESCRIPTION,
       url: SITE_URL,
       image: `${SITE_URL}/logo.png`,
-      operatingSystem: "Android, iOS",
+      operatingSystem: APP_STORE_URL ? "Android, iOS" : "Android",
       applicationCategory: "EducationalApplication",
       inLanguage: "en-IN",
       audience: { "@type": "EducationalAudience", educationalRole: "UPSC civil services aspirant" },

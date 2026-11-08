@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Apple, PlayCircle } from "lucide-react";
-import { APP_STORE_URL, PLAY_STORE_URL } from "@/lib/site";
+import { PlayCircle } from "lucide-react";
+import { PLAY_STORE_URL } from "@/lib/site";
+import AppStoreButton from "./AppStoreButton";
 
 export default function DownloadCTA() {
   return (
@@ -33,18 +34,17 @@ export default function DownloadCTA() {
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href={PLAY_STORE_URL || "#download"}
+            target="_blank"
+            rel="noopener"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-[#fdb913] px-8 py-4 font-semibold text-black glow-orange hover:bg-[#ffc93d] transition-all"
           >
             <PlayCircle size={20} />
             Get it on Google Play
           </a>
-          <a
-            href={APP_STORE_URL || "#download"}
-            className="inline-flex items-center justify-center gap-2 rounded-full glass px-8 py-4 font-semibold text-white hover:bg-white/10 transition-all"
-          >
-            <Apple size={20} />
-            Download on the App Store
-          </a>
+          <AppStoreButton
+            label="Download on the App Store"
+            className="inline-flex items-center justify-center gap-2 rounded-full glass px-8 py-4 font-semibold text-white transition-all"
+          />
         </div>
       </motion.div>
     </section>
