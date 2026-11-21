@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function RefundsPage() {
   return (
-    <LegalLayout title="Cancellation and Refunds" updated="18 October 2026">
+    <LegalLayout title="Cancellation and Refunds" updated="21 November 2026">
       <h2>No Auto-Renewal, Nothing to Cancel</h2>
       <p>
         ConceptAffairs plans are one-time prepaid terms of 1, 3, 6, or 12 months. They do not
@@ -48,6 +48,18 @@ export default function RefundsPage() {
         charge, including your registered mobile number and the Google Play order ID (it starts with
         &quot;GPA.&quot; and is in your Google Play receipt email).
         Approved refunds are returned to the original payment method.
+      </p>
+
+      <h2>Purchases Made on iPhone</h2>
+      <p>
+        Plans bought in the iPhone app are charged by Apple, and only Apple can refund them. To
+        request a refund, go to{" "}
+        <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">
+          reportaproblem.apple.com
+        </a>{" "}
+        and sign in with your Apple Account. Apple decides refund requests under its own
+        policies. If you need help with a purchase, you can also email{" "}
+        <a href="mailto:humblyprep@gmail.com">humblyprep@gmail.com</a>.
       </p>
 
       <h2>Contact</h2>

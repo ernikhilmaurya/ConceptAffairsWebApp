@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <LegalLayout title="Terms & Conditions" updated="18 October 2026">
+    <LegalLayout title="Terms & Conditions" updated="21 November 2026">
       <p>
         These Terms & Conditions (&quot;Terms&quot;) govern your access to and use of the
         ConceptAffairs mobile application and website (together, the &quot;Service&quot;),
@@ -43,15 +43,17 @@ export default function TermsPage() {
         already paid for.
       </p>
       <p>
-        Payments are processed by Google Play under Google&apos;s terms. We never receive or
-        store your card, UPI, or banking credentials.
+        Payments in the Android app are processed by Google Play under Google&apos;s terms.
+        Purchases in the iPhone app are processed by Apple as in-app purchases under
+        Apple&apos;s terms. We never receive or store your card, UPI, or banking credentials.
       </p>
 
       <h2>4. Access, Cancellation & Refunds</h2>
       <p>
         Your access runs until the end of the term you purchased and then simply stops. Because
         plans do not auto-renew, no cancellation step is required. Refund eligibility is set out
-        on our <a href="/refunds">Cancellation and Refunds</a> page.
+        on our <a href="/refunds">Cancellation and Refunds</a> page. Refunds for purchases made
+        in the iPhone app are handled by Apple.
       </p>
 
       <h2>5. Acceptable Use</h2>
