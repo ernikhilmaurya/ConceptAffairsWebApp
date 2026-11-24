@@ -45,7 +45,7 @@ export default function RefundsPage() {
         unauthorised transaction, or a payment that was successfully debited but did not
         activate your plan. To request a review, email{" "}
         <a href="mailto:humblyprep@gmail.com">humblyprep@gmail.com</a> within 7 days of the
-        charge, including your registered mobile number and the Google Play order ID (it starts with
+        charge, including your registered mobile number and, for Android purchases, the Google Play order ID (it starts with
         &quot;GPA.&quot; and is in your Google Play receipt email).
         Approved refunds are returned to the original payment method.
       </p>

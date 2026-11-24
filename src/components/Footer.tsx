@@ -125,7 +125,7 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} ConceptAffairs. All rights reserved.
           </p>
-          <p>Available on Android · iOS coming soon.</p>
+          <p>Available on Android · iPhone.</p>
         </div>
         <p className="mt-6 text-center text-xs text-white/30">
           ConceptAffairs is an independent educational app, not affiliated with UPSC or any

@@ -7,13 +7,13 @@ export const SUPPORT_EMAIL = "humblyprep@gmail.com";
 
 export const SITE_TITLE = "ConceptAffairs — UPSC Current Affairs App with Daily Quiz & Revision";
 export const SITE_DESCRIPTION =
-  "ConceptAffairs is a UPSC current affairs app for IAS / civil services aspirants: daily news analysis mapped to the GS syllabus, Prelims MCQs, Mains practice questions and spaced revision. 7-day free trial on Android.";
+  "ConceptAffairs is a UPSC current affairs app for IAS / civil services aspirants: daily news analysis mapped to the GS syllabus, Prelims MCQs, Mains practice questions and spaced revision. 7-day free trial on Android and iPhone.";
 
 // Store listings. Leave empty until the listing is public — an empty value
 // keeps buttons pointing at the on-page #download section and keeps the URL
 // out of structured data.
 export const PLAY_STORE_URL: string = "https://play.google.com/store/apps/details?id=com.conceptaffairs.app";
-export const APP_STORE_URL: string = "";
+export const APP_STORE_URL: string = "https://apps.apple.com/in/app/conceptaffairs/id6833510223";
 
 // Social profiles. Fill in as they go live; non-empty ones are added to the
 // Organization `sameAs` so Google can tie them to the brand.
@@ -61,7 +61,7 @@ export const FAQS = [
   },
   {
     q: "Which platforms is ConceptAffairs available on?",
-    a: "ConceptAffairs is a mobile-only app, available on Android via Google Play. The iOS version is coming soon to the App Store. There is no desktop app — this website exists only to help you find and install it.",
+    a: "ConceptAffairs is a mobile-only app, available on Android via Google Play and on iPhone via the App Store. There is no desktop app — this website exists only to help you find and install it.",
   },
   {
     q: "Is there a free trial?",
@@ -73,7 +73,7 @@ export const FAQS = [
   },
   {
     q: "Will I be charged again automatically?",
-    a: "No. Plans are paid once, in the app, through Google Play, and do not auto-renew. Your access simply ends when your plan does, so there is nothing to cancel. See our Cancellation & Refunds policy for refunds.",
+    a: "No. Plans are paid once, in the app, through Google Play on Android or the App Store on iPhone, and do not auto-renew. Your access simply ends when your plan does, so there is nothing to cancel. See our Cancellation & Refunds policy for refunds.",
   },
   {
     q: "Is ConceptAffairs an official UPSC app?",
