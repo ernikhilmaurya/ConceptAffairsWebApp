@@ -19,17 +19,17 @@ const COLUMNS = [
   {
     title: "Product",
     links: [
-      { label: "Features", href: "#features" },
-      { label: "How It Works", href: "#pillars" },
-      { label: "Pricing", href: "#pricing" },
-      { label: "Who It's For", href: "#audience" },
+      { label: "Features", href: "/#features" },
+      { label: "How It Works", href: "/#pillars" },
+      { label: "Pricing", href: "/#pricing" },
+      { label: "Who It's For", href: "/#audience" },
     ],
   },
   {
     title: "Company",
     links: [
-      { label: "About", href: "#about" },
-      { label: "Support / FAQ", href: "#support" },
+      { label: "About", href: "/#about" },
+      { label: "Support / FAQ", href: "/#support" },
       { label: "Contact", href: "/contact" },
     ],
   },

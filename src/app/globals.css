@@ -110,3 +110,26 @@ body {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-14px); }
 }
+
+.hero-enter {
+  animation: hero-enter 0.7s ease-out both;
+}
+
+@keyframes hero-enter {
+  from { opacity: 0; transform: translateY(24px); }
+}
+
+.hero-fade-in {
+  animation: hero-fade-in 1.2s ease-out both;
+}
+
+@keyframes hero-fade-in {
+  from { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-enter,
+  .hero-fade-in {
+    animation: none;
+  }
+}

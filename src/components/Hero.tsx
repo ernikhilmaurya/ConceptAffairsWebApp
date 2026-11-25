@@ -1,7 +1,7 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
-import { motion } from "framer-motion";
 import { PlayCircle, Star } from "lucide-react";
 import { PLAY_STORE_URL } from "@/lib/site";
 import AppStoreButton from "./AppStoreButton";
@@ -9,18 +9,33 @@ import AppStoreButton from "./AppStoreButton";
 const Hero3D = dynamic(() => import("./Hero3D"), { ssr: false });
 
 export default function Hero() {
+  // The 3D scene (three.js) is the heaviest script on the page. Start it only
+  // once the browser is idle so it never delays the headline from painting.
+  const [show3D, setShow3D] = useState(false);
+  useEffect(() => {
+    const start = () => setShow3D(true);
+    if ("requestIdleCallback" in window) {
+      const id = window.requestIdleCallback(start, { timeout: 3000 });
+      return () => window.cancelIdleCallback(id);
+    }
+    const id = setTimeout(start, 1500);
+    return () => clearTimeout(id);
+  }, []);
+
   return (
     <section id="top" className="relative min-h-[100svh] flex items-center overflow-hidden pt-28 pb-20">
       <div className="absolute inset-0 grid-fade" />
-      <Hero3D />
+      {show3D && (
+        <div className="absolute inset-0 hero-fade-in">
+          <Hero3D />
+        </div>
+      )}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#07070a]/40 to-[#07070a] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full grid md:grid-cols-2 gap-12 items-center">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-        >
+        {/* CSS entrance, not framer-motion: the headline is the LCP element and
+            must not stay invisible until JavaScript hydrates. */}
+        <div className="hero-enter">
           <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-xs text-white/70 mb-6">
             <Star size={14} className="text-[#8bc34a]" fill="#8bc34a" />
             Built for UPSC Civil Services aspirants
@@ -60,7 +75,7 @@ export default function Hero() {
           <p className="mt-4 text-xs text-white/40">
             Available exclusively as a mobile app · 7-day free trial · No card needed to start
           </p>
-        </motion.div>
+        </div>
 
         {/* spacer column so 3D scene has room on desktop */}
         <div className="hidden md:block" />

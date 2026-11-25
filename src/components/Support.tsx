@@ -46,7 +46,7 @@ export default function Support() {
                 <div className="flex items-start gap-3">
                   <HelpCircle size={18} className="text-[#ffd966] mt-0.5 shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-sm">{f.q}</h4>
+                    <h3 className="font-semibold text-sm">{f.q}</h3>
                     <p className="mt-1.5 text-sm text-white/55 leading-relaxed">{f.a}</p>
                   </div>
                 </div>
@@ -87,6 +87,7 @@ export default function Support() {
                   required
                   name="name"
                   type="text"
+                  aria-label="Full name"
                   placeholder="Full name"
                   className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-sm outline-none focus:border-[#fdb913]/60 transition-colors"
                 />
@@ -94,6 +95,7 @@ export default function Support() {
               <select
                 required
                 name="type"
+                aria-label="Query type"
                 defaultValue=""
                 className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-sm outline-none focus:border-[#fdb913]/60 transition-colors text-white/70"
               >
@@ -110,6 +112,7 @@ export default function Support() {
                 required
                 name="message"
                 rows={4}
+                aria-label="Your message"
                 placeholder="Tell us what's up..."
                 className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-sm outline-none focus:border-[#fdb913]/60 transition-colors resize-none"
               />
